@@ -9,8 +9,8 @@ Variables
   --clr-primary-1: #101935;
   --clr-red: #b80c09;
   --clr-black: #222;
-  --clr-yellow: #e7bb41;
   --color-white: #fff;
+  --nav-color: #ced0ce;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -79,28 +79,8 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
-
-/* section */
-/* .section {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: var(--max-width);
-  }
-  
-  @media screen and (min-width: 992px) {
-    .section {
-      width: 95vw;
-    }
-  } */
-
-/*
-    =============== 
-    Navbar
-    ===============
-    */
 nav {
-  background: var(--clr-white);
+  background: var(--nav-color);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -111,15 +91,19 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-yellow);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-1);
   transform: rotate(90deg);
+}
+.nav__logo {
+  font-size: 2rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  color: #101935;
 }
 .logo {
   height: 40px;
@@ -177,7 +161,6 @@ nav {
   .links a:hover {
     padding: 10px;
     border-radius: 5px;
-    background: var(--clr-yellow);
   }
   .social-icons {
     display: flex;
@@ -188,6 +171,6 @@ nav {
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--clr-yellow);
+    /* color: var(--clr-yellow); */
   }
 }

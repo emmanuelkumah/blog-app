@@ -40,3 +40,15 @@ export const social = [
     icon: <FaBehance />,
   },
 ];
+
+// Hero section
+export const homeHero = {
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  headline: "Keep update to date in tech",
+  description: "A hub for everthing frontend, backend & devOps",
+  startBtn: "Get Started",
+  readBtn: "Read Post",
+  imgStart: "",
+};

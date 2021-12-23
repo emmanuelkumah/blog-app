@@ -1,0 +1,133 @@
+.home__hero-section {
+  color: #011627;
+  padding: 100px;
+  background: #ced0ce;
+}
+
+.home__hero-row {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.col {
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.heroImg {
+  position: relative;
+  max-width: 100%;
+  top: 2px;
+  left: 30px;
+}
+.hero__btn {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
+  outline: none;
+  margin-right: 30px;
+}
+.start {
+  background-color: #f13030;
+  color: #fff;
+}
+.read {
+  background-color: #f79824;
+  color: #011627;
+}
+.hero__btn:hover {
+  background-color: #4a5759;
+  color: #011627;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.home__hero-text-wrapper {
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  /* color: #041c32; */
+}
+
+.dark {
+  color: #041c32;
+}
+
+.darkBg {
+  background-color: #041c32;
+}
+
+.home__hero-subtitle {
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000501;
+}
+
+.home__hero-img-wrapper {
+  max-width: 555px;
+}
+
+.home__hero-img {
+  position: relative;
+  max-width: 100%;
+  margin-top: 0;
+  z-index: 2;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__hero-text-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 65px;
+  }
+  .heroImg {
+    width: 80vw;
+  }
+  .top-line {
+    color: #eee;
+  }
+  .home__hero-img {
+    margin-top: -15px;
+  }
+  .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}

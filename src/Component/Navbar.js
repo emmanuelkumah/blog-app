@@ -25,7 +25,7 @@ function Navbar() {
         <nav>
           <div className="nav-center">
             <div className="nav-header">
-              <img src="images/logo.png" className="logo" alt="logo" />
+              <h4 className="nav__logo">w.rite</h4>
 
               <button className="nav-toggle" onClick={toggleLinks}>
                 <FaBars />

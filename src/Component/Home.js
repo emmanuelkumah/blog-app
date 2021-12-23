@@ -1,9 +1,11 @@
 import React from "react";
+import Hero from "./Hero";
+import { homeHero } from "./Data";
 
 function Home() {
   return (
     <div>
-      <p>This is the home pae</p>
+      <Hero {...homeHero} id="hero" />
     </div>
   );
 }
