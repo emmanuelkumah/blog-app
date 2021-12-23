@@ -1,0 +1,37 @@
+.subFooter {
+  background-color: #273043;
+  color: #fff;
+}
+.subFooter_details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.btn__footer {
+  background-color: #f13030;
+  color: #fff;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+}
+.btn__footer:hover {
+  background-color: #011627;
+}
+
+.footer {
+  background-color: #050404;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn__footer {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
