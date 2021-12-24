@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import { links, social } from "./Data";
+import { links } from "./Data";
+import { FiLogIn } from "react-icons/fi";
+import { BiLogOut } from "react-icons/bi";
 import "../css/Navbar.css";
 
 function Navbar() {
@@ -43,16 +45,14 @@ function Navbar() {
                 })}
               </ul>
             </div>
-            <ul className="social-icons">
-              {social.map((socialIcon) => {
-                const { id, url, icon } = socialIcon;
-                return (
-                  <li key={id}>
-                    <a href={url}>{icon}</a>
-                  </li>
-                );
-              })}
-            </ul>
+            <div className="cta-icons">
+              <button className="login">
+                Login <FiLogIn />
+              </button>
+              <button className="logout">
+                Login <BiLogOut />
+              </button>
+            </div>
           </div>
         </nav>
       </div>

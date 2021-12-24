@@ -162,15 +162,40 @@ nav {
     padding: 10px;
     border-radius: 5px;
   }
-  .social-icons {
+  .cta-icons {
     display: flex;
   }
-  .social-icons a {
+  .login {
+    background-color: #2e4057;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 18px;
+    color: #fff;
+  }
+  .logout {
+    background-color: #2e86ab;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+  }
+  /* .login-icons {
     margin: 0 0.5rem;
     color: var(--clr-primary-5);
-    transition: var(--transition);
   }
-  .social-icons a:hover {
-    /* color: var(--clr-yellow); */
-  }
+}
+.login__icon {
+  background-color: #101935;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+} */
 }
