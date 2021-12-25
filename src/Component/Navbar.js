@@ -4,8 +4,9 @@ import { links } from "./Data";
 import { FiLogIn } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 import "../css/Navbar.css";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ isAuth }) {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
@@ -46,12 +47,19 @@ function Navbar() {
               </ul>
             </div>
             <div className="cta-icons">
-              <button className="login">
-                Login <FiLogIn />
-              </button>
-              <button className="logout">
-                Login <BiLogOut />
-              </button>
+              {isAuth ? (
+                <Link to="/login">
+                  <button className="logout">
+                    Log out <BiLogOut />
+                  </button>
+                </Link>
+              ) : (
+                <Link to="/login">
+                  <button className="login">
+                    Login <FiLogIn />
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         </nav>

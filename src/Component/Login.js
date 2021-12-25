@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 function Login({ setIsAuth }) {
   //google sign in
   let navigate = useNavigate();
+
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then((result) => {
       localStorage.setItem("isAuth", true);
@@ -18,7 +19,7 @@ function Login({ setIsAuth }) {
   return (
     <>
       <section className="login__container">
-        <h3>Sign In</h3>
+        <h4>Sign In To Create Post</h4>
         <button
           type="button"
           className="login-with-google-btn"

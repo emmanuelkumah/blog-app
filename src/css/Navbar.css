@@ -176,6 +176,9 @@ nav {
     margin-right: 18px;
     color: #fff;
   }
+  .login:hover {
+    background-color: #d62828;
+  }
   .logout {
     background-color: #2e86ab;
     color: #fff;
@@ -186,16 +189,7 @@ nav {
     outline: none;
     border-radius: 5px;
   }
-  /* .login-icons {
-    margin: 0 0.5rem;
-    color: var(--clr-primary-5);
+  .logout:hover {
+    background-color: var(--clr-red);
   }
-}
-.login__icon {
-  background-color: #101935;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  outline: none;
-} */
 }
