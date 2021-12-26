@@ -47,19 +47,17 @@ function Navbar({ isAuth }) {
               </ul>
             </div>
             <div className="cta-icons">
-              {isAuth ? (
-                <Link to="/login">
-                  <button className="logout">
-                    Log out <BiLogOut />
-                  </button>
-                </Link>
-              ) : (
-                <Link to="/login">
-                  <button className="login">
-                    Login <FiLogIn />
-                  </button>
-                </Link>
-              )}
+              <Link to="/login">
+                <button className="logout">
+                  Log out <BiLogOut />
+                </button>
+              </Link>
+
+              <Link to="/login">
+                <button className="login">
+                  Login <FiLogIn />
+                </button>
+              </Link>
             </div>
           </div>
         </nav>

@@ -18,6 +18,16 @@
   padding: 10px;
   margin-bottom: 40px;
 }
+.form__category,
+.form__date {
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  outline: none;
+}
 
 .form__btn {
   background-color: #405cf5;
@@ -28,8 +38,40 @@
   font-size: 1.2rem;
   padding: 8px;
   color: #fff;
+  margin-top: 40px;
 }
-.form__btn:hover {
-  background-color: #f13030;
+.form__btn:hover,
+.success__btn:hover {
+  background-color: #63264a;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #fff;
+}
+
+label {
+  margin: 20px;
+}
+
+.success__container {
+  margin: 30px auto;
+}
+.success__message {
+  background-color: #acf7c1;
+  color: #222;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+.success__btn {
+  background-color: #ede580;
+  color: #222;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
 }
