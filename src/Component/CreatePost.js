@@ -32,8 +32,8 @@ function CreatePost({
   //Redirect user to login page if not authenticated
 
   useEffect(() => {
-    if (!isAuth) {
-      navigate("/login");
+    if (isAuth) {
+      navigate("/createpost");
     }
   }, []);
 
