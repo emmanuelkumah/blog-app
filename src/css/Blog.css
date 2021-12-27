@@ -23,20 +23,20 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
 }
-.card {
+.post {
   display: flex;
   flex-direction: column;
 }
 
-.card__cover {
+.post__cover {
   height: 150px;
   width: 100%;
 }
-.cardImg {
+.postImg {
   display: block;
   margin: 20px auto;
 }
-.card__author {
+.post__author {
   margin-top: 105px;
   display: flex;
   justify-content: center;
@@ -67,9 +67,6 @@
   margin-left: 80px;
 }
 
-/* .blog__hr {
-  border-top: 1px dotted #041c32;
-} */
 .postIcon {
   margin-left: 10px;
   margin-right: 10px;
@@ -82,4 +79,38 @@
   border-radius: 5px;
   text-align: center;
   background-color: #ffc145;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .post__card__item {
+    flex-basis: 100%;
+  }
+  .post__category {
+    width: 50%;
+    margin-top: 50px;
+  }
+  .postIcon {
+  }
+  .post__author {
+    margin-top: 120px;
+    font-size: 0.6rem;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .post__card__item {
+    flex-basis: 100%;
+  }
+  .post__category {
+    width: 20%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .post__card__item {
+    flex-basis: 30%;
+  }
 }

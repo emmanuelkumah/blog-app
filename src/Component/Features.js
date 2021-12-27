@@ -18,7 +18,7 @@ function Features({ id }) {
               </div>
               <h3 className="card__title">Helping Hand</h3>
               <p className="card__content">
-                Write intresting articles that helps solve someone's nightmare
+                Write in depth articles that helps solve someone's nightmare
               </p>
             </div>
           </div>
@@ -31,8 +31,8 @@ function Features({ id }) {
               <h3 className="card__title">Find Audience</h3>
 
               <p className="card__content">
-                Instantly find your audience for your next article as soon as
-                you post
+                Instantly find audience for your next article as soon as you
+                post
               </p>
             </div>
           </div>

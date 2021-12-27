@@ -63,7 +63,7 @@ function CreatePost({
             onChange={handleInput}
           />
         </div>
-        <div>
+        <div className="date-category">
           <label htmlFor="datetime">
             Select Date:
             <input

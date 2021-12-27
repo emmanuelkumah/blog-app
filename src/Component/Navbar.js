@@ -39,32 +39,32 @@ function Navbar({ isAuth }) {
                 {links.map((link) => {
                   const { id, url, text } = link;
                   return (
-                    <li key={id}>
+                    <li key={id} className="navLinks">
                       <a href={url}>{text}</a>
                     </li>
                   );
                 })}
-              </ul>
-            </div>
-            <div className="cta-icons">
-              <Link to="/">
-                <button className="logout">
-                  Log out <BiLogOut />
-                </button>
-              </Link>
+                <div className="cta-icons">
+                  <Link to="/">
+                    <button className="logout">
+                      Sign Out <BiLogOut />
+                    </button>
+                  </Link>
 
-              <Link to="/login">
-                <button className="login">
-                  Login <FiLogIn />
-                </button>
-              </Link>
-              {isAuth ? (
-                <Link to="/createpost">
-                  <button className="login">Create Post</button>
-                </Link>
-              ) : (
-                ""
-              )}
+                  <Link to="/login">
+                    <button className="login">
+                      Sign In <FiLogIn />
+                    </button>
+                  </Link>
+                  {isAuth ? (
+                    <Link to="/createpost">
+                      <button className="login">Create Post</button>
+                    </Link>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              </ul>
             </div>
           </div>
         </nav>

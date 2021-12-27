@@ -1,8 +1,6 @@
 .form__container {
   width: 60vw;
   margin: 50px auto;
-  border-radius: 10px;
-  /* border: 2px solid #2e4057; */
 }
 
 .form__title,
@@ -74,4 +72,21 @@ label {
   outline: none;
   border: none;
   margin-bottom: 30px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .form__category {
+    margin-top: 20px;
+  }
+  .form__container {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .form__container {
+    width: 80vw;
+  }
+  .date-category {
+    display: flex;
+  }
 }

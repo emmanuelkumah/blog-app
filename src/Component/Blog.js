@@ -16,12 +16,12 @@ function Blog({ postLists }) {
         {postLists.map((post) => (
           <div key={post.id} className="post__card__item">
             <article>
-              <div className="card">
-                <div className="card__cover">
-                  <img src="images/imgBlog.png" className="cardImg" />
+              <div className="post">
+                <div className="post__cover">
+                  <img src="images/imgBlog.png" className="postImg" />
                   <p className="post__category">{post.category}</p>
                 </div>
-                <div className="card__author">
+                <div className="post__author">
                   <p>
                     <BsCalendar2Date className="postIcon" />
                     {post.date}

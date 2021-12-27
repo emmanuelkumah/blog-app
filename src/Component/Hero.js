@@ -44,12 +44,14 @@ function Hero({
                 >
                   {description}
                 </p>
-                <Link to="/login">
-                  <button className="hero__btn start">{startBtn}</button>
-                </Link>
-                <Link to="/blog">
-                  <button className="hero__btn read">{readBtn}</button>
-                </Link>
+                <div className="btn__container">
+                  <Link to="/login">
+                    <button className="hero__btn start">{startBtn}</button>
+                  </Link>
+                  <Link to="/blog">
+                    <button className="hero__btn read">{readBtn}</button>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="col">
