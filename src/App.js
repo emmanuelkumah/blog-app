@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import CreatePost from "./Component/CreatePost";
 import Home from "./Component/Home";
 import Login from "./Component/Login";
 import Navbar from "./Component/Navbar";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, getDocs, collection } from "firebase/firestore";
 import { auth, db } from "./FirebaseConfig";
 import Blog from "./Component/Blog";
 
@@ -18,10 +18,11 @@ function App() {
     date: "",
     category: "",
   });
+  const [postLists, setPostLists] = useState([]);
 
   const postsCollectionRef = collection(db, "posts");
 
-  //create Events
+  //create new Post
   const createPost = async () => {
     await addDoc(postsCollectionRef, {
       ...input,
@@ -30,6 +31,16 @@ function App() {
 
     setIsPublished(true);
   };
+
+  //get access to Post
+  useEffect(() => {
+    const getPost = async () => {
+      const data = await getDocs(postsCollectionRef);
+
+      setPostLists(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getPost();
+  }, []);
 
   //handle input change
   const handleInput = (event) => {
@@ -70,10 +81,11 @@ function App() {
               handleInput={handleInput}
               handleInputSubmit={handleInputSubmit}
               isPublished={isPublished}
+              isAuth={isAuth}
             />
           }
         />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={<Blog postLists={postLists} />} />
       </Routes>
     </Router>
   );

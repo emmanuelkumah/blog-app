@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/Form.css";
 import { useNavigate } from "react-router-dom";
 
-function CreatePost({ input, handleInput, handleInputSubmit, isPublished }) {
+function CreatePost({
+  input,
+  handleInput,
+  handleInputSubmit,
+  isPublished,
+  isAuth,
+}) {
+  //redirect user
   let navigate = useNavigate();
 
   //redirect to blog page
@@ -20,8 +27,16 @@ function CreatePost({ input, handleInput, handleInputSubmit, isPublished }) {
         </button>
       </div>
     );
-    // clearTimeout(alert);
   };
+
+  //Redirect user to login page if not authenticated
+
+  useEffect(() => {
+    if (!isAuth) {
+      navigate("/login");
+    }
+  }, []);
+
   return (
     <div className="form__container">
       {isPublished ? showMessage() : ""}

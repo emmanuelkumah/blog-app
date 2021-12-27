@@ -1,0 +1,51 @@
+.post__cards {
+  display: flex;
+
+  /* Put a card in the next row when previous cards take all width */
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  /* padding: 10px; */
+}
+
+.post__card__item {
+  /* There will be 4 cards per row */
+  flex-basis: 30%;
+  padding: 10px;
+  margin: 20px;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__cover {
+  height: 150px;
+  width: 100%;
+}
+
+.card__content {
+  /* Take available height */
+  flex: 1;
+}
+
+.blog__social__share {
+  margin-right: 40px;
+  margin-left: 80px;
+}
+/* .event__count {
+    background: #041c32;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    padding: 6px;
+    top: -50px;
+    left: 150px;
+  } */
+.blog__hr {
+  border-top: 1px dotted #041c32;
+}
