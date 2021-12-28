@@ -1,5 +1,5 @@
 # What is the project about 
-This project enables logged in users to create a post, view and read the published posts
+This project enables logged in users to create blog posts, view and read the published posts
 
 ## Features
 - Google Login authentication
@@ -12,6 +12,7 @@ This project enables logged in users to create a post, view and read the publish
 - Firebase firestore
 - React icons
 - React share
+
 
 
 
