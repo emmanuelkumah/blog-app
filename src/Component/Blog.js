@@ -11,7 +11,6 @@ function Blog({ postLists, isAuth }) {
     <>
       <section>
         <h3 className="sectionCaption">Checkout the latest articles</h3>
-        {isAuth ? <button>Create Post</button> : ":"}
       </section>
       <div className="post__cards">
         {postLists.map((post) => (
@@ -43,9 +42,9 @@ function Blog({ postLists, isAuth }) {
               <div className="post__social__container">
                 <FacebookShareButton
                   className="post__social__share"
-                  url="http://localhost:3000/"
-                  quote="Join the party"
-                  hashtag="#React"
+                  url="https://write.netlify.app/"
+                  quote="Read post"
+                  hashtag="#Blog"
                 >
                   <FacebookIcon
                     iconFillColor="white"
@@ -55,8 +54,8 @@ function Blog({ postLists, isAuth }) {
                 </FacebookShareButton>
                 <WhatsappShareButton
                   className="blog__social__share"
-                  title="Let's cook together"
-                  url="http://localhost:3000/"
+                  title="Read latest tech news"
+                  url="https://write.netlify.app/"
                 >
                   <WhatsappIcon
                     iconFillColor="white"
