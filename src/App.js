@@ -85,7 +85,10 @@ function App() {
             />
           }
         />
-        <Route path="/blog" element={<Blog postLists={postLists} />} />
+        <Route
+          path="/blog"
+          element={<Blog postLists={postLists} isAuth={isAuth} />}
+        />
       </Routes>
     </Router>
   );

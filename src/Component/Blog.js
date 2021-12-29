@@ -6,11 +6,12 @@ import { BsCalendar2Date } from "react-icons/bs";
 import { BiUserCircle } from "react-icons/bi";
 import Footer from "./Footer";
 
-function Blog({ postLists }) {
+function Blog({ postLists, isAuth }) {
   return (
     <>
       <section>
         <h3 className="sectionCaption">Checkout the latest articles</h3>
+        {isAuth ? <button>Create Post</button> : ":"}
       </section>
       <div className="post__cards">
         {postLists.map((post) => (
